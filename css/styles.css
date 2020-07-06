@@ -1,0 +1,87 @@
+.background {
+    background-color: black;
+    cursor: crosshair;
+
+
+}
+
+.background-image {
+    background-image: url("../img/portada2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0,0,0, 0.4);
+    filter: blur(5px);
+    height: 100%;
+    width:100%;
+    position:fixed;
+}
+
+
+.buttonmenu {
+    width:50%;
+    height: 10%;
+    margin-bottom:3%;
+    background-color: blanchedalmond;
+    color:white;
+    transition: width 0.3s;
+    transition: height 0.1s;
+
+}
+.animationini {
+    animation-name: appear;
+    animation-duration: 0.3s;
+    position: relative;
+}
+
+@keyframes appear {
+    from {left:-100%;}
+    to {left:0%;}
+  }
+
+.buttonmenusecond  {
+    width:100%;
+    height: 100%;
+    background-color: rgb(128, 11, 0);
+    color:white;
+    transition: width 0.3s;
+    position: relative;
+    transform: rotate(8deg);
+    left:10%;
+    top:0%;
+
+
+}
+
+.buttonmenu:hover  {
+    animation-name: movementbutton;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movementbutton {
+    0%   {width:50%; height:10%;}
+    50%  {width:55%; height:12%; transform: rotate(-2deg);}
+    100% {width:50%; height:10%;}
+  }
+
+.sizecomplete {
+    position:fixed;
+    height:100%;
+    width:100%;
+    display: inline-flex;
+}
+
+.sizeleft {
+    padding: 1% 0%;
+    width:50%;
+}
+
+.textbutton {
+    align-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position:relative;
+    top:25%;
+    left:5%;
+    font-size:2.5vw;
+ 
+}
